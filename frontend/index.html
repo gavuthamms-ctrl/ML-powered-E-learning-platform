@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnML - AI Powered Learning</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="background-animation">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <nav class="navbar glass">
+        <div class="logo">Learn<span>ML</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="roadmap.html">Roadmaps</a></li>
+        </ul>
+        <div class="user-profile">
+            <div class="avatar">T</div>
+            <span>test_learner</span>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content glass-card slide-up">
+                <h1>Unlock Your Potential with AI</h1>
+                <p>Personalized learning paths tailored just for you. Discover courses that fit your goals and propel your career forward.</p>
+                <a href="quiz.html" class="btn primary">Take the Quiz</a>
+            </div>
+        </section>
+
+        <section id="recommended" class="course-section">
+            <div class="section-header fade-in">
+                <h2>Recommended For You</h2>
+                <p>Based on your interest in Machine Learning</p>
+            </div>
+            <div class="course-grid" id="recommendations-container">
+                <!-- Courses injected via JS -->
+            </div>
+        </section>
+
+        <section id="all-courses" class="course-section">
+            <div class="section-header fade-in">
+                <h2>All Courses</h2>
+                <p>Explore our wide variety of topics</p>
+            </div>
+            <div class="course-grid" id="all-courses-container">
+                <!-- Courses injected via JS -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass">
+        <p>&copy; 2026 LearnML Platform. All rights reserved.</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

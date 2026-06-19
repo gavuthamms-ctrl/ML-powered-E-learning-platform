@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnML - Onboarding Quiz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="background-animation">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <nav class="navbar glass">
+        <div class="logo">Learn<span>ML</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="quiz.html" class="active">Quiz</a></li>
+            <li><a href="roadmap.html">Roadmaps</a></li>
+        </ul>
+    </nav>
+
+    <main class="quiz-container slide-up">
+        <div class="glass-card quiz-card">
+            <div id="quiz-header">
+                <h2>Personalize Your Path</h2>
+                <p>Answer 10 quick questions to get tailored recommendations.</p>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="progress-bar"></div>
+                </div>
+                <p id="question-count">Question 1 of 10</p>
+            </div>
+            
+            <div id="quiz-body">
+                <h3 id="question-text">Loading question...</h3>
+                <div class="options-grid" id="options-container">
+                    <!-- Options injected here -->
+                </div>
+            </div>
+
+            <div id="quiz-footer">
+                <button id="next-btn" class="btn primary" disabled>Next Question</button>
+            </div>
+
+            <div id="results-section" style="display: none;">
+                <h3>✨ Your Recommended Courses ✨</h3>
+                <p>Based on your unique profile, here is what we suggest:</p>
+                <div class="course-grid" id="recommendations-container" style="margin-top: 2rem;">
+                    <!-- Recs injected here -->
+                </div>
+                <div style="text-align: center; margin-top: 2rem;">
+                    <a href="index.html" class="btn primary">Go to Dashboard</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/quiz.js"></script>
+</body>
+</html>

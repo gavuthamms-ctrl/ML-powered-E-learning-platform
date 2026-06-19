@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnML - Career Roadmaps</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="background-animation">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <nav class="navbar glass">
+        <div class="logo">Learn<span>ML</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="roadmap.html" class="active">Roadmaps</a></li>
+        </ul>
+    </nav>
+
+    <main class="roadmap-container slide-up">
+        <div style="text-align:center; margin-bottom: 3rem;">
+            <h1>Discover Your Path</h1>
+            <p style="color: var(--text-secondary); margin-top: 1rem;">Search for a field like 'Web Development', 'Data Science', or 'Cyber Security' to see the recommended learning steps.</p>
+        </div>
+
+        <input type="text" id="roadmap-search" class="search-box" placeholder="Search for a domain (e.g. Data Science)...">
+        
+        <div id="roadmap-content" style="display:none;">
+            <h2 id="roadmap-domain" style="margin-bottom: 1rem; color: var(--accent-color);"></h2>
+            <div class="timeline" id="timeline-container">
+                <!-- Timeline steps injected here -->
+            </div>
+        </div>
+        
+        <div id="loading" class="loader-container" style="display:none;">
+            <span class="loader"></span>
+        </div>
+    </main>
+
+    <script src="js/roadmap.js"></script>
+</body>
+</html>

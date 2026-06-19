@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnML - Course Details</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="background-animation">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <nav class="navbar glass">
+        <div class="logo">Learn<span>ML</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="roadmap.html">Roadmaps</a></li>
+        </ul>
+    </nav>
+
+    <main class="course-detail-container">
+        <div class="course-main-info glass-card slide-up">
+            <div class="course-category" id="course-category">Loading...</div>
+            <h1 id="course-title">Loading...</h1>
+            <div class="course-tags" id="course-tags" style="margin: 1rem 0;"></div>
+            
+            <h3 style="margin-top:2rem;">About this course</h3>
+            <p id="course-desc" style="color: var(--text-secondary); line-height: 1.6; margin-top: 1rem;"></p>
+
+            <h3 style="margin-top:2rem;">Syllabus Modules</h3>
+            <ul class="modules-list" id="modules-list">
+                <!-- Modules injected here -->
+            </ul>
+        </div>
+
+        <div class="course-sidebar glass-card slide-up" style="animation-delay: 0.2s;">
+            <h3>Enrollment</h3>
+            <div class="duration-badge" id="course-duration">Duration: --</div>
+            <p style="color: var(--text-secondary); font-size:0.9rem; margin-bottom: 2rem;">Get access to all course materials and project files by enrolling today.</p>
+            <button id="enroll-btn" class="btn primary" style="width: 100%;">Enroll Now</button>
+            <p id="enroll-msg" style="color: #10b981; font-size:0.9rem; margin-top:1rem; text-align:center; display:none;">✨ Successfully enrolled!</p>
+        </div>
+    </main>
+
+    <script src="js/course.js"></script>
+</body>
+</html>
