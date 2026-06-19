@@ -1,6 +1,19 @@
 {
-  "cleanUrls": true,
+  "builds": [
+    {
+      "src": "backend/app.py",
+      "use": "@vercel/python"
+    },
+    {
+      "src": "frontend/**",
+      "use": "@vercel/static"
+    }
+  ],
   "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/backend/app.py"
+    },
     {
       "source": "/(.*)",
       "destination": "/frontend/$1"
