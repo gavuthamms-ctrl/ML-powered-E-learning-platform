@@ -7,7 +7,21 @@ app = Flask(__name__)
 CORS(app)
 
 import os
-db_path = os.path.join(os.path.dirname(__file__), 'database.sqlite')
+import shutil
+import tempfile
+
+original_db_path = os.path.join(os.path.dirname(__file__), 'database.sqlite')
+db_path = os.path.join(tempfile.gettempdir(), 'database.sqlite')
+
+if not os.path.exists(db_path):
+    if os.path.exists(original_db_path):
+        shutil.copy2(original_db_path, db_path)
+    else:
+        db_path = original_db_path
+else:
+    # If it exists in temp, we can just use it. 
+    pass
+
 app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{db_path}'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
